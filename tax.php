@@ -1,6 +1,10 @@
 <?php
 
-function multiply($ogNumber){
+function addItems(){
+
+}
+
+function multiplyTax($ogNumber){
 
 	$tax = $ogNumber * .07;
 	$added = $tax + $ogNumber;
@@ -8,7 +12,7 @@ function multiply($ogNumber){
 
 }
 
-$calc = multiply(4);
+$calc = multiplyTax(4);
 
   ?>
 
@@ -20,6 +24,7 @@ $calc = multiply(4);
 <body>
 	<h1> Tax Calculator </h1>
     <h3>
+    
 <?= $calc ?>
  	</h3>
 </body>
