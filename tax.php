@@ -193,12 +193,13 @@
 
          function addItem(){
             if (leftDisplay !==""){
-            		rightDisplay.innerText = "Item 2:";
+            		operator.innerText = "Item 2:";
             }else{
-            		rightDisplay.innerText = "Item 2:";
+          
             }
         }
         document.getElementById('additem').addEventListener('click', addItem);
+
 
 
 
