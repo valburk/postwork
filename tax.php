@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1> </h1>
-    <div id="leftInput" class="resultboxL"> Item 1</div>
+    <div id="leftInput" class="resultboxL"> Item 1: </div>
     <div id="middleInput" class="middle"></div>
     <div id="rightInput" class="resultboxR"></div>
     <button id="box-one" class="box"> 1</button>
@@ -31,7 +31,7 @@
 		var operator = document.getElementById('middleInput');
 		var leftDisplay = document.getElementById('leftInput');
 		var rightDisplay = document.getElementById('rightInput'); 
-       
+      
 
        //console log 1    
         function logOne(){
@@ -178,57 +178,6 @@
         }
         document.getElementById('box-deci').addEventListener('click', logDeci);
 
-                
-
-
-
-                //console log divide 
-                  
-        function logDivide(){
-            operator.innerText = "/";
-        }
-        document.getElementById('divide-box').addEventListener('click', logDivide);
-
-              
-
-
-
-               //console log mult  
-                
-        function logMult(){
-            operator.innerText = "x";
-        }
-        document.getElementById('mult-box').addEventListener('click', logMult);
-
-
-
-
-
-          		//console log plus
-          
-        function logPlus(){
-            operator.innerText = "+";
-        	 // if (operator.innerText == "+"){
-        	 	// var result = leftDisplay.innerText + rightDisplay.innerText;
-        	} 	 
-        	// }
-        
-        document.getElementById('plus-box').addEventListener('click', logPlus);
-
-          		
-
-
-
-          		//console log minus  
-        
-        function logMinus(){
-            operator.innerText = "-";
-        }
-        document.getElementById('minus-box').addEventListener('click', logMinus);
-
-          	
-
-
 
           		//console log C  
        
@@ -238,6 +187,19 @@
             rightDisplay.innerText = "";
         }
         document.getElementById('box-clear').addEventListener('click', logC);
+
+
+//make this it's own item and if not empty then add to bottom display!!
+
+         function addItem(){
+            if (leftDisplay !==""){
+            		rightDisplay.innerText = "Item 2:";
+            }else{
+            		rightDisplay.innerText = "Item 2:";
+            }
+        }
+        document.getElementById('additem').addEventListener('click', addItem);
+
 
 
 
