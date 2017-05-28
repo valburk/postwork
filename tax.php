@@ -4,29 +4,27 @@
 <html>
 <head>
     <title> Tax Calculator </title>
+    <link rel="stylesheet" href="css/position.css">
 </head>
 <body>
     <h1> </h1>
-    <div id="leftInput" class="resultboxL"></div>
+    <div id="leftInput" class="resultboxL"> Item 1</div>
     <div id="middleInput" class="middle"></div>
     <div id="rightInput" class="resultboxR"></div>
     <button id="box-one" class="box"> 1</button>
     <button id="box-two" class="box">2</button>
     <button id="box-three" class="box">3 </button>
-    <button id="plus-box" class="box">+</button>
     <button id="box-four" class="box">4 </button>
     <button id="box-five" class="box">5 </button>
     <button id="box-six" class="box">6 </button>
-    <button id="minus-box" class="box">- </button>
     <button id="box-seven" class="box"> 7 </button>
     <button id="box-eight" class="box"> 8 </button>
     <button id="box-nine" class="box"> 9 </button>
-    <button id="mult-box" class="box"> x </button>
     <button id="box-clear" class="box">C </button>
     <button id="box-zero" class="box"> 0 </button>
-    <button id="box-deci" class="box">. </button>
-    <button id="divide-box" class="box"> / </button>
-    <button id="equals" class="equalsbox"> = </button>
+        <button id="box-deci" class="box">. </button>
+    <button id="additem" class="additem"> Add Item </button>
+    <button id="equals" class="equalsbox"> Calculate Tax </button>
 	<script>
 
 		"use strict";
